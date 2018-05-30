@@ -1,0 +1,45 @@
+.wrapper,
+.form-sidebar {
+  -webkit-transition: all 1.1 ease;
+  transition: all 1.1 ease;
+}
+
+.active-sidebar {
+  -webkit-transform: translate(-400px);
+          transform: translate(-400px);
+  -webkit-box-shadow: 0px 0px 30px #CECECE;
+          box-shadow: 0px 0px 30px #CECECE;
+}
+
+.active-sidebar + .form-bar {
+  -webkit-transform: translate(0px);
+          transform: translate(0px);
+}
+
+.form-bar {
+  width: 400px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: black;
+  color: #fff;
+  height: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(400px);
+          transform: translate(400px);
+  padding: 0px 20px;
+}
+
+.form-bar button {
+  border: 1px solid #fff;
+  background: #fff;
+  color: #000;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.form-bar button:hover {
+  background: #000;
+  color: #fff;
+}
+
